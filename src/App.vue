@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/erpModal">About</router-link>
     <el-button type="primary" @click="toMenu">菜单</el-button>
   </div>
   <router-view/>
