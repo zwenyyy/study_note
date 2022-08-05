@@ -1,5 +1,8 @@
 <template>
-  <div>123213123
+  <div>
+    <div class="menu">
+      <el-button v-for="(item, i) in menuList.erp" :key="i">{{item.menuName}}</el-button>
+    </div>
     <keep-alive>
       <router-view></router-view>
     </keep-alive>
@@ -7,8 +10,13 @@
 </template>
 
 <script>
+import menuList from '@/config/erpMenu'
   export default {
-    
+    data() {
+      return {
+        menuList
+      }
+    },
   }
 </script>
 

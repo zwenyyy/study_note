@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import codeNote from './codeNote'
 import erpModal from './erpModal'
+import wordsModal from './wordsModal'
 
 const routes = [
   {
@@ -15,7 +16,8 @@ const routes = [
     component: () => import('../views/About.vue')
   },
   ...codeNote,
-  ...erpModal
+  ...erpModal,
+  ...wordsModal
 ]
 
 const router = createRouter({

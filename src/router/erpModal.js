@@ -6,12 +6,12 @@ export default [
     component: erpModalComponent,
     children: [
       {
-        path: 'css-display-grid',
-        name: 'note_css_grid',
+        path: 'router-head-check',
+        name: 'router_head_check',
         component: () => import('@/views/codeNote/CSSHTML/display/grid.vue'),
         meta: {
           title: '栅格布局',
-          name: 'note_css_grid',
+          name: 'router_head_check',
         }
       },
     ]

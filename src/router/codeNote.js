@@ -30,7 +30,7 @@ export default [
           title: 'ElementPlus注意事项',
           name: 'element_plus',
         }
-      }
+      },
     ]
   }
 ]

@@ -3,6 +3,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/erpModal">About</router-link>
     <el-button type="primary" @click="toMenu">菜单</el-button>
+    <el-button type="primary" @click="toWordsModal">菜单</el-button>
   </div>
   <router-view/>
 </template>
@@ -12,6 +13,9 @@
     methods: {
       toMenu() {
         this.$router.push('/codeNote')
+      },
+      toWordsModal() {
+        this.$router.push('/words-modal')
       },
     }
   }
