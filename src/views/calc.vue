@@ -153,9 +153,9 @@
   grid-template-rows: repeat(5, 20%);
 }
 .result_box {
-  height: 30px;
-  line-height: 30px;
-  font-size: 20px;
+  height: 50px;
+  line-height: 70px;
+  font-size: 30px;
   padding-right: 5px;
   text-align: right;
 }
