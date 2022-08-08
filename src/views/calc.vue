@@ -2,7 +2,9 @@
   <div class="calc_box">
     <div class="result_box">{{result_value}}</div>
     <div class="calc_button">
-      <button v-for="(item, i) in button_arr" :key="i" @click="keyDown(item)">{{item}}</button>
+      <div class="button_box" v-for="(item, i) in button_arr" :key="i" @click="keyDown(item)">
+        <div class="xxxxxxxxxx">{{item}}</div>
+      </div>
     </div>
   </div>
 </template>
@@ -137,7 +139,12 @@
 
 <style scoped>
 .calc_box {
-  width: 1000px;
+  width: 500px;
+  margin-left: calc(50% - 250px);
+  background: #E6E6E6;
+  border: 1px solid black;
+  padding: 5px;
+  padding-left: 2px;
 }
 .calc_button {
   height: 500px;
@@ -150,8 +157,21 @@
   line-height: 30px;
   font-size: 20px;
   padding-right: 5px;
-  border: 1px solid black;
-  border-bottom: none;
   text-align: right;
+}
+.button_box {
+  margin: 3px 0 0 3px;
+  cursor: pointer;
+}
+.xxxxxxxxxx {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.button_box :hover {
+  background: #E6E6E6;
 }
 </style>
